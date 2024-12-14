@@ -41,3 +41,8 @@
 .CategoryName:hover {
   color: #204063 !important;
 }
+
+.CategoryName:hover {
+  color: #204063 !important;
+  display: flex;
+}
