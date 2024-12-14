@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/WeConnect.css'; // Import your external CSS file if needed
+import '../styles/Responsive.css'; // Import your external CSS file if needed
 import TrustedImage from '../assets/images/icons/trust.png';
 import SafeAndSecureImage from '../assets/images/icons/shield.png';
 import QuickAssistanceImage from'../assets/images/icons/headshet.png'

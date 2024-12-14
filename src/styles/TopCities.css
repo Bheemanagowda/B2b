@@ -9,7 +9,7 @@
     font-size: 28px;
     margin-bottom: 20px;
     color: #333;
-    text-align: left !important;
+    text-align: left ;
   }
   
   /* Grid Layout */
@@ -21,9 +21,9 @@
   
   /* City Card Styles */
   .city-card {
-    width: 280px !important;
+    width: 280px ;
 
-    color: #121212 !important;
+    color: #121212 ;
  
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -48,7 +48,7 @@
   
   /* City Image Styles */
   .city-image {
-    width: 280px !important;
+    width: 280px ;
     height: 200px;
     object-fit: cover; /* Ensures the image covers the area without stretching */
     border-radius: 8px;

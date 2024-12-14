@@ -1,5 +1,6 @@
 import React from 'react';
-
+import "../../styles/Responsive.css"
+import "../../styles/Product.css"
 // Import images
 import NutsImage from '../../assets/images/mechanical-products/1.png';
 import NailsImage from '../../assets/images/mechanical-products/2.png';

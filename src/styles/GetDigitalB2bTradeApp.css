@@ -3,7 +3,7 @@
     align-items: baseline;  /* Vertically align elements in the center */
      /* Center horizontally */
      flex-direction: column !important;
-     padding: 140px !important;
+     padding: 140px ;
   }
   
   .GetDigitalTradeAppTitle {

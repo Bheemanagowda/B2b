@@ -1,0 +1,121 @@
+@media screen and (min-width: 320px) and (max-width: 767px){
+   
+    .headerTop {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #f3f3f3 !important;
+        flex-direction: column !important;
+        gap: 20px;
+    }
+    .search-bar {
+        width: 100% !important;
+    }
+    .searchFlex {
+        display: flex !important
+    ;
+        align-items: center !important;
+        width: 100% !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mx-3 {
+        margin-right: 1rem ;
+        margin-left: 1rem !important;
+      }
+    .category-image {
+        width: 100%;
+        height: auto !important;
+        object-fit: cover;
+        border-radius: 0;
+        background-color: #F3F3F3 !important;
+        border: 1px solid #BFBFBF !important;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px !important;
+    }
+    .weConnectContainer {
+        text-align: center;
+        padding: 15px !important;
+        background-color: #f9f9f9;
+    }
+    .iconCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px !important;
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+    .enquireNowContainer {
+        padding: 15px !important;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .city-card {
+        width: 100% !important;
+        color: #121212 !important;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        text-align: center;
+    }
+    .city-image {
+        width: 100% !important;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .categoryIcon {
+        width: 100%;
+        height: 100% !important;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: brightness(80%);
+    }
+    .subscribe-container {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important ;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .subscribe-input {
+        padding: 17px !important;
+        width: 67% !important;
+        background-color: #F3F3F3;
+        border: none;
+    }
+    .GetDigital {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column !important;
+        padding: 19px !important;
+        align-items: center !important;
+       
+    }
+    .GetDigitalTradeAppTitle {
+        font-size: 27px !important;
+        font-weight: 600;
+        margin-right: 10px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -0px !important;
+    }
+    .subscribe-title {
+        font-size: 27px !important;
+        text-align: center;
+        color: #204063 !important;
+        margin-bottom: 30px !important;
+    }
+    .contact-us-address {
+        font-size: 21px !important;
+        color: #727272;
+        text-align: left !important;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}

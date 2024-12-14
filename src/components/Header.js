@@ -1,18 +1,19 @@
 import React, { useState } from 'react';  // Import useState hook
 import logo from '../assets/images/logo.png';
-import '../styles/Header.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Dropdown, InputGroup, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faSearch } from '@fortawesome/free-solid-svg-icons';  // Correct import for microphone and search icons
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import '../styles/Header.css';
+import '../styles/Responsive.css';
+
+
 
 export default function Header() {
 
-  const mx3 = {
-    marginRight: '1rem', // Use camelCase for CSS properties
-    marginLeft: '15rem',
-  };
+
   const [searchTerm, setSearchTerm] = useState('');  // Using useState hook to manage search term
 
   const handleSearchChange = (e) => {
@@ -36,7 +37,7 @@ export default function Header() {
 
       {/* Search Section */}
      <div className='searchFlex '>
-     <div className="search-bar   " style={mx3}>
+     <div className="search-bar  mx-3 " >
         <InputGroup className="mb-0">
           <InputGroup.Text>
             <FontAwesomeIcon icon={faSearch} />  {/* Add search icon inside the input */}

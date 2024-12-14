@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/EnquiryNow.css";  // Import your external CSS if needed
+import '../styles/Responsive.css';
 import backgroundImage from '../assets/images/enquiry-now.jpg';
 
 export default function EnquireNow() {

@@ -8,7 +8,7 @@
   .image-container img {
     max-width: 100%; /* Makes the images responsive */
     height: auto;
-    margin-top: -100px !important;
+    margin-top: -100px ;
   }
   .DownloadApp1{
     width: 495px !important;

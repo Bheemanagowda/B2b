@@ -51,3 +51,15 @@
 body {
   margin: 0; /* Specifically set margin to 0 for the body */
 }
+html, body {
+  overflow-x: hidden;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  html, body {
+    overflow-x: hidden;
+  }
+  
+
+}

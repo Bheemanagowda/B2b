@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/TopCities.css';
+import '../styles/Responsive.css'
 import bengaluruImage from '../assets/images/topcities/bengaluru.jpg';
 import delhiImage from '../assets/images/topcities/delhi.jpg';
 import hyderabadImage from '../assets/images/topcities/hydrabad.jpg';

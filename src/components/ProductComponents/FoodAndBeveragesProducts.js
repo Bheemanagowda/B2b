@@ -1,5 +1,7 @@
 import React from 'react';
 import "../../styles/Product.css"
+import "../../styles/Responsive.css"
+
 
 // Ensure to import or define your image variables correctly
 import MasalaImage from '../../assets/images/food-beverages/masala.png';

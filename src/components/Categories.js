@@ -2,6 +2,7 @@
 import React from 'react'
 import '../styles/Categories.css';
 import '../styles/Customize.css'
+import '../styles/Responsive.css'
 
 import InteriorFurnitureImage from '../assets/images/categories/interior-design.png';
 import FoodBeveragesiImage from '../assets/images/categories/fast-food.png';

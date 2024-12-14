@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../styles/Product.css"
+import "../../styles/Responsive.css"
 
 import SolarImage from '../../assets/images/electronics-electrical/solar.png';
 import InvertersImage from '../../assets/images/electronics-electrical/inverters.png';

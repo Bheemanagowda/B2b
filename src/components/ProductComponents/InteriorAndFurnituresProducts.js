@@ -4,6 +4,8 @@ import KitchenImage from '../../assets/images/ineterior-furnitures/kitchen.png';
 import WardrobeImage from '../../assets/images/ineterior-furnitures/wardrobe.jpg';
 import TvunitImage from '../../assets/images/ineterior-furnitures/tv-unit.png';
 import "../../styles/Product.css"
+import "../../styles/Responsive.css"
+
 
 export default function InteriorAndFurnituresProducts() {
   // Categories

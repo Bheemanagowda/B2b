@@ -1,9 +1,9 @@
 .subscribe-button{
-    background-color: #204063 !important;
-    border:1px solid #204063 !important;
-    color:#ffffff !important;
-    font-size: 14px !important;
-    font-weight: 400px !important;
+    background-color: #204063 ;
+    border:1px solid #204063 ;
+    color:#ffffff ;
+    font-size: 14px ;
+    font-weight: 400px ;
  padding-top: 14px;
  padding-right: 20px;
  padding-left: 20px;
@@ -15,18 +15,18 @@
 
 }
 .subscribe-input{
-    padding: 17px !important;
-    width: 35% !important;
+    padding: 17px ;
+    width: 35% ;
     background-color: #F3F3F3;
     border: none;
 }
 .subscribe-title{
-    font-size: 40px !important;
+    font-size: 40px ;
     text-align: center;
-    color: #204063 !important;
-    margin-bottom: 30px !important;
+    color: #204063 ;
+    margin-bottom: 30px ;
 
 }
 .subscribe-container{
-    padding: 100px !important;
+    padding: 100px ;
 }

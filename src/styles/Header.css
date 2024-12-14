@@ -3,9 +3,9 @@
    
     align-items: center;
     padding: 20px;
-    background-color: #f3f3f3 !important;
+    background-color: #f3f3f3 ;
   
-  justify-content: space-between !important;
+  justify-content: space-between ;
   }
   
   .logo img {
@@ -74,21 +74,21 @@ btn-primary {
   user-select: none;
   border: #46a695;
   border-radius: var(--bs-btn-border-radius);
-  background-color: #46a695 !important;
+  background-color: #46a695 ;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .searchButton{
-  background-color: #204063 !important;
-  border-color: #204063 !important;
+  background-color: #204063 ;
+  border-color: #204063 ;
 }
 .categoriesBtn{
-  background-color: #fff !important;
-  color:gray !important;
-  border: 1px solid rgb(195, 193, 193) !important;
+  background-color: #fff ;
+  color:gray ;
+  border: 1px solid rgb(195, 193, 193) ;
 }
 .getPrice{
-  background-color: #46a695 !important;
-  border: #46a695 !important;
+  background-color: #46a695 ;
+  border: #46a695 ;
   border-radius: 8px;
 }
 .input-group {
@@ -101,20 +101,23 @@ btn-primary {
   
 }
 .searchFlex{
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
+  display: flex ;
+  align-items: center ;
+  width: 100% ;
 
 
 }
 .p-31 {
-  padding: 10px !important;
-  margin-bottom: 100px !important;
+  padding: 10px ;
+  margin-bottom: 100px ;
 }
 .search-bar {
   width: 60%;
 }  
 .mx-3 {
-  margin-right: 3rem !important;
-  margin-left: 20rem !important;
+  margin-right: 1rem ;
+  margin-left: 12rem !important;
+}
+.btn-primary{
+  color: #fff ;
 }

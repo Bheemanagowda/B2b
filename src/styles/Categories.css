@@ -6,7 +6,7 @@
   }
   
   .category-image {
-    width: 80%;
+    width: 100%;
     height: 60%;
     object-fit: cover; /* Ensures the image fits within its dimensions */
     border-radius: 0; /* Remove any border rounding */
