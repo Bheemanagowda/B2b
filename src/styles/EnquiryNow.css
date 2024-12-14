@@ -1,0 +1,54 @@
+.enquireNowContainer {
+    padding: 200px;
+   
+    margin: 0 auto;
+ 
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enquireNowContainer h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #204063;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  .enquireForm .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .enquireForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .enquireForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: #204063;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    font-weight: 400;
+  }
+  
+  .submitButton:hover {
+    background-color: #46a695
+  }
+  

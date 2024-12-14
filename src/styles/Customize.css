@@ -1,0 +1,53 @@
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+
+h2{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif !important;
+}
+h4{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+h5{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+h6{
+font-size: 18px !important;
+font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px !important;
+}
+
+
+
+
+
+
+
+.pt-80{
+    padding-top: 80px;
+
+
+}
+.pb-80{
+padding-bottom: 80px;
+}
+
+

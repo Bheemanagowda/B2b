@@ -1,0 +1,147 @@
+.FooterBg{
+    background-color: #F3F3F3 !important;
+    padding: 20px !important;
+}
+.footer-links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links-list li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  .footer-links-list li i {
+    margin-right: 8px;
+    color: #727272;
+  }
+  
+  .footer-links-list li a {
+    text-decoration: none;
+    color: #727272;
+    transition: color 0.3s;
+    font-size: 21px !important;
+  }
+  
+  .footer-links-list li a:hover {
+    color: #204063;
+  }
+  
+  .FooterTitle{
+    display: flex;
+    font-size: 24px ;
+    font-weight: 600;
+    color: #204063;
+    margin-bottom: 20px;
+
+  }
+
+  /*address location css */
+  
+  .contact-us-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #204063;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-address {
+    font-size: 21px !important;
+    color: #727272;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+
+  }
+  
+
+  /*Telephone */
+  .telephone-title {
+    font-size: 24px;
+    font-weight: 600;
+    color:#204063;
+    text-align: center;
+    margin-bottom: 5px !important;
+
+  }
+  
+  .telephone-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 26px;
+  }
+  
+  .telephone-item {
+    
+    font-size: 21px;
+  }
+  
+  .telephone-link {
+    color: #727272;
+    text-decoration: none;
+
+    
+  }
+  
+  .telephone-link:hover {
+    text-decoration:none;
+    color: #204063;
+  }
+  .telephone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important ;
+
+  }
+
+  /*Email css */
+  .email-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #204063;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  
+  .email-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+  }
+  
+  .email-item {
+  
+    font-size: 16px;
+  }
+  
+  .email-link {
+    color: #727272;
+    text-decoration: none;
+    line-height: 26px;
+    font-size: 21px;
+  }
+  
+  .email-link:hover {
+    text-decoration: none;
+    color: #204063;
+  }
+  .email-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .CopyRights {
+ align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #727272 !important;
+  }

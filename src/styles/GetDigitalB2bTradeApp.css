@@ -1,0 +1,29 @@
+.GetDigital {
+    display: flex;
+    align-items: baseline;  /* Vertically align elements in the center */
+     /* Center horizontally */
+     flex-direction: column !important;
+     padding: 140px !important;
+  }
+  
+  .GetDigitalTradeAppTitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 10px; 
+    color:#fff; 
+    margin-bottom: 30px ;
+    /* Add some space between the title and the image */
+  }
+  
+  .GooglePlayImage {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px !important;
+   
+  }
+  
+  .GooglePlayStoreImage {
+    width: 212px; /* Adjust the width of the image as necessary */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+  

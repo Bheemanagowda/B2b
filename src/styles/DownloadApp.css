@@ -1,0 +1,33 @@
+.download-app {
+    position: relative;
+  width: fit-content; /* Adjust based on content */
+  height: fit-content;
+  margin: auto;/* Add spacing between the images */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Makes the images responsive */
+    height: auto;
+    margin-top: -100px !important;
+  }
+  .DownloadApp1{
+    width: 495px !important;
+    height: 442px !important;
+    position: absolute !important;
+    z-index: 1;
+    top: 100px !important;
+    margin-left: -83px !important;
+
+  }
+  .DownloadApp2{
+    width: 625.77px !important;
+    height: 549px !important;
+    position: relative;
+ 
+  
+
+  }
+  .image-container{
+    position: relative;
+  }
+  

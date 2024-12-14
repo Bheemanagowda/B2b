@@ -1,0 +1,64 @@
+/* General Styles */
+.top-cities {
+    text-align: center;
+  
+  }
+  
+
+  .top-cities h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left !important;
+  }
+  
+  /* Grid Layout */
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  /* City Card Styles */
+  .city-card {
+    width: 280px !important;
+
+    color: #121212 !important;
+ 
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center; /* Center text */
+  }
+  
+  .city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .city-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .city-card p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* City Image Styles */
+  .city-image {
+    width: 280px !important;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .cities-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

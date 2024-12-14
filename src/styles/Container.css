@@ -1,0 +1,13 @@
+/* Custom container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 15px; /* Horizontal padding */
+  }
+  
+  /* Optional: Add some padding inside for top and bottom */
+  .container-padding {
+    padding: 20px 0; /* Padding on top and bottom */
+  }
+  
