@@ -17,7 +17,7 @@ import EnquiryWeconnect from './components/EnquiryWeconnect'
 function App() {
   return (
     <div className="App">
-    <Header/>
+    <Header />
     <EnquiryWeconnect/>
   
     <Categories/>

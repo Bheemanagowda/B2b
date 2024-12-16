@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <div className="headerTop  p-31">
+    <div className="headerTop sticky-header p-31">
       {/* Logo Section */}
       <div className='logo'>
         <img src={logo} alt='logo' className="img-fluid" />  {/* Display logo */}
