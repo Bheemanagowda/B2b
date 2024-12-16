@@ -4,7 +4,7 @@ import WeConnectBuyersAndSellers from './WeConnectBuyersAndSellers'
 
 export default function EnquiryWeconnect() {
   return (
-    <div className='container-fluid g-0' >
+    <div className='container-fluid g-0'  style={{marginTop:"220px"}}>
         <div className='row g-0'>
             <div className='col-md-6'>
             <EnquireNow/>
