@@ -105,12 +105,13 @@ btn-primary {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  height: 50px ;
   
 }
 .searchFlex{
   display: flex ;
   align-items: center ;
-  width: 100% ;
+  width: 70% ;
 
 
 }
@@ -122,11 +123,12 @@ btn-primary {
   width: 60%;
 }  
 .mx-3 {
-  margin-right: 1rem ;
+  margin-right: 0rem !important;
   margin-left: 12rem !important;
 }
 .btn-primary{
   color: #fff ;
+  font-size: 25px;
 }
 /* Header Styles */
 .headerTop {
@@ -146,3 +148,37 @@ btn-primary {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.categoriesBtn{
+  color: gray;
+
+}
+
+.categoriesDropdown{
+  border: 1px solid gray;
+  background-color: #ffffff !important;
+  font-size: 19px ;
+}
+
+.custom-search-input {
+  font-size: 20px; /* Sets the font size */
+  padding: 10px; /* Sets the padding inside the input */
+  border: 1px solid #ccc; /* Default border style */
+  border-right: none; /* Removes the right border */
+  outline: none; /* Removes focus outline for cleaner appearance */
+  border-radius: 0px 0 0 0px; /* Rounded corners only on the left side */
+  box-shadow: none; /* Prevents unwanted input box shadows */
+}
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: var(--bs-form-invalid-color);
+  position: absolute!important;
+}
+.input-group .btn {
+  position: relative;
+  z-index: 2;
+  /* border: red; */
+  border: solid 1px #bdbbbb;
+}

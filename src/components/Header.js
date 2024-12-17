@@ -1,82 +1,150 @@
-import React, { useState } from 'react';  // Import useState hook
+import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
 
+// Bootstrap and FontAwesome
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Dropdown, InputGroup, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrophone, faSearch } from '@fortawesome/free-solid-svg-icons';  // Correct import for microphone and search icons
+import { faMicrophone, faSearch } from '@fortawesome/free-solid-svg-icons';
+
+// Material UI
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+// Styles
 import '../styles/Header.css';
 import '../styles/Responsive.css';
 
-
-
 export default function Header() {
+  // State for managing search input and category selection
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('Categories');
+  const [error, setError] = useState(''); // State for error message
 
-
-  const [searchTerm, setSearchTerm] = useState('');  // Using useState hook to manage search term
-
+  // Handle input change
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);  // Update search term as user types
+    setSearchTerm(e.target.value);
+    if (e.target.value) setError(''); // Clear error if input is not empty
   };
 
-  const handleSearchClick = () => {
-    alert(`Search term: ${searchTerm}`);  // Action for search button (can replace with your logic)
+  // Handle category selection
+  const handleCategorySelect = (eventKey) => {
+    setSelectedCategory(eventKey);
   };
 
+  // Handle form submission
+  const handleSearchClick = (e) => {
+    e.preventDefault(); // Prevent default behavior
+    if (!searchTerm.trim()) {
+      setError('This field is required');
+      return;
+    }
+    // Logic for submitting the search
+    alert(`Searching for: ${searchTerm}`);
+  };
+
+  // Handle Sign-In click
   const handleSignInClick = () => {
-    alert("Redirecting to Sign-In page...");  // Example action for sign-in
+    alert('Redirecting to Sign-In page...');
   };
 
   return (
     <div className="headerTop sticky-header p-31">
       {/* Logo Section */}
-      <div className='logo'>
-        <img src={logo} alt='logo' className="img-fluid" />  {/* Display logo */}
+      <div className="logo">
+        <img src={logo} alt="Company Logo" className="img-fluid" />
       </div>
 
       {/* Search Section */}
-     <div className='searchFlex '>
-     <div className="search-bar  mx-3 " >
-        <InputGroup className="mb-0">
-          <InputGroup.Text>
-            <FontAwesomeIcon icon={faSearch} />  {/* Add search icon inside the input */}
-          </InputGroup.Text>
-          <Form.Control
-            placeholder="Search/Products"  // Updated placeholder
-            aria-label="Search input"
-            value={searchTerm}
-            onChange={handleSearchChange}  // Handle input change
-          />
-          <InputGroup.Text>
-            <FontAwesomeIcon icon={faMicrophone}  style={{color:"gray"}}/>  {/* Display microphone icon */}
-          </InputGroup.Text>
-          <Dropdown>
-            <Dropdown.Toggle className='categoriesBtn' id="dropdown-basic">
-              Categories
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Option 1</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Option 2</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Option 3</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Button className='searchButton' onClick={handleSearchClick}>
-            Search
-          </Button>
-        </InputGroup>
-      </div>
+      <div className="searchFlex">
+        <div className="search-bar mx-3">
+          <InputGroup>
+            {/* Dropdown for Categories */}
+            <Dropdown onSelect={handleCategorySelect}>
+              <Dropdown.Toggle
+                id="dropdown-categories"
+                className="categoriesDropdown"
+                variant="none"
+                style={{ color: 'gray' }}
+              >
+                {selectedCategory}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item eventKey="Option 1">Option 1</Dropdown.Item>
+                <Dropdown.Item eventKey="Option 2">Option 2</Dropdown.Item>
+                <Dropdown.Item eventKey="Option 3">Option 3</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
 
-      {/* Get Price Button */}
-      <div className='getPrice'>
-        <Button className='getPrice'>
-          Get Price
-        </Button>
+            {/* Search Input with Microphone Icon */}
+            <div style={{ position: 'relative', width: '60%' }}>
+              <Form.Control
+                type="text"
+                placeholder="Search Here Products"
+                aria-label="Search input"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                isInvalid={!!error}
+                className="custom-search-input"
+                style={{ paddingRight: '40px' }} // Space for the icon
+              />
+
+              {/* Microphone Icon */}
+              <span
+                style={{
+                  position: 'absolute',
+                  right: '10px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  color: 'gray',
+                  cursor: 'pointer',
+                }}
+              >
+                <FontAwesomeIcon icon={faMicrophone} />
+              </span>
+
+              {/* Error Message */}
+              <Form.Control.Feedback type="invalid">
+                {error}
+              </Form.Control.Feedback>
+            </div>
+
+            {/* Search Button */}
+            <InputGroup.Text
+              type="button"
+              onClick={handleSearchClick}
+              className="searchIconContainer"
+              style={{
+                backgroundColor: '#204063', // Custom background color
+                color: '#FFF', // White icon color
+                cursor: 'pointer',
+                border: 'none',
+                padding: '10px 15px',
+                borderRadius: '0 5px 5px 0',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+              }}
+            >
+              <FontAwesomeIcon icon={faSearch} />
+              SEARCH
+            </InputGroup.Text>
+          </InputGroup>
+        </div>
+
+        {/* Get Price Button */}
+        <div className="getPrice">
+          <Button variant="primary" className="getPrice">
+            Get Price
+          </Button>
+        </div>
       </div>
-     </div>
 
       {/* Sign-In Section */}
-      <div className='signIn' onClick={handleSignInClick} style={{ cursor: 'pointer' }}>
+      <div
+        className="signIn"
+        onClick={handleSignInClick}
+        style={{ cursor: 'pointer' }}
+      >
         <AccountCircleIcon fontSize="large" />
         <p>Sign In</p>
       </div>

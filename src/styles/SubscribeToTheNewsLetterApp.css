@@ -2,16 +2,16 @@
     background-color: #204063 ;
     border:1px solid #204063 ;
     color:#ffffff ;
-    font-size: 14px ;
+    font-size: 20px ;
     font-weight: 400px ;
- padding-top: 14px;
- padding-right: 20px;
- padding-left: 20px;
- padding-bottom: 14px;
+ padding-top: 8px;
+ padding-right: 8px;
+ padding-left: 8px;
+ padding-bottom:8px;
  border-bottom-right-radius: 4px;
  border-top-right-radius: 4px;
- width: 102px;
- height: 56px;
+ width: 130px;
+ height: 58px;
 
 }
 .subscribe-input{
@@ -19,6 +19,7 @@
     width: 35% ;
     background-color: #F3F3F3;
     border: none;
+    height: 58px;
 }
 .subscribe-title{
     font-size: 40px ;

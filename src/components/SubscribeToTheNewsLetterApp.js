@@ -25,7 +25,7 @@ export default function SubscribeToTheNewsLetterApp() {
           placeholder="Enter your email Address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="subscribe-input"
+          className="subscribe-input custom-search-input"
           required
         />
         <button type="submit" className="subscribe-button">Subscribe</button>
