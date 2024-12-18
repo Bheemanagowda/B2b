@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import '../styles/SubscribeToTheNewsLetterApp.css'; // Create this file for styling
+import React, { useState } from "react";
+import "../styles/SubscribeToTheNewsLetterApp.css"; // Create this file for styling
 
 export default function SubscribeToTheNewsLetterApp() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubscribe = (e) => {
     e.preventDefault();
-    
+
     // Here, you can add the logic to submit the email (e.g., send to an API)
     if (email) {
-      setMessage('Thank you for subscribing!');
+      setMessage("Thank you for subscribing!");
     } else {
-      setMessage('Please enter a valid email address.');
+      setMessage("Please enter a valid email address.");
     }
   };
 
@@ -28,7 +28,9 @@ export default function SubscribeToTheNewsLetterApp() {
           className="subscribe-input custom-search-input"
           required
         />
-        <button type="submit" className="subscribe-button">Subscribe</button>
+        <button type="submit" className="subscribe-button">
+          Subscribe
+        </button>
       </form>
       {message && <p className="subscribe-message">{message}</p>}
     </div>

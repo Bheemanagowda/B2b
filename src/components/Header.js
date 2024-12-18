@@ -1,29 +1,29 @@
-import React, { useState } from 'react';
-import logo from '../assets/images/logo.png';
+import React, { useState } from "react";
+import logo from "../assets/images/logo.png";
 
 // Bootstrap and FontAwesome
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form, Dropdown, InputGroup, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrophone, faSearch } from '@fortawesome/free-solid-svg-icons';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Form, Dropdown, InputGroup, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 // Material UI
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 // Styles
-import '../styles/Header.css';
-import '../styles/Responsive.css';
+import "../styles/Header.css";
+import "../styles/Responsive.css";
 
 export default function Header() {
   // State for managing search input and category selection
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('Categories');
-  const [error, setError] = useState(''); // State for error message
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Categories");
+  const [error, setError] = useState(""); // State for error message
 
   // Handle input change
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
-    if (e.target.value) setError(''); // Clear error if input is not empty
+    if (e.target.value) setError(""); // Clear error if input is not empty
   };
 
   // Handle category selection
@@ -35,7 +35,7 @@ export default function Header() {
   const handleSearchClick = (e) => {
     e.preventDefault(); // Prevent default behavior
     if (!searchTerm.trim()) {
-      setError('This field is required');
+      setError("This field is required");
       return;
     }
     // Logic for submitting the search
@@ -44,7 +44,7 @@ export default function Header() {
 
   // Handle Sign-In click
   const handleSignInClick = () => {
-    alert('Redirecting to Sign-In page...');
+    alert("Redirecting to Sign-In page...");
   };
 
   return (
@@ -64,7 +64,7 @@ export default function Header() {
                 id="dropdown-categories"
                 className="categoriesDropdown"
                 variant="none"
-                style={{ color: 'gray' }}
+                style={{ color: "gray" }}
               >
                 {selectedCategory}
               </Dropdown.Toggle>
@@ -76,7 +76,7 @@ export default function Header() {
             </Dropdown>
 
             {/* Search Input with Microphone Icon */}
-            <div style={{ position: 'relative', width: '60%' }}>
+            <div style={{ position: "relative", width: "60%" }}>
               <Form.Control
                 type="text"
                 placeholder="Search Here Products"
@@ -85,18 +85,18 @@ export default function Header() {
                 onChange={handleSearchChange}
                 isInvalid={!!error}
                 className="custom-search-input"
-                style={{ paddingRight: '40px' }} // Space for the icon
+                style={{ paddingRight: "40px" }} // Space for the icon
               />
 
               {/* Microphone Icon */}
               <span
                 style={{
-                  position: 'absolute',
-                  right: '10px',
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  color: 'gray',
-                  cursor: 'pointer',
+                  position: "absolute",
+                  right: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  color: "gray",
+                  cursor: "pointer",
                 }}
               >
                 <FontAwesomeIcon icon={faMicrophone} />
@@ -114,15 +114,15 @@ export default function Header() {
               onClick={handleSearchClick}
               className="searchIconContainer"
               style={{
-                backgroundColor: '#204063', // Custom background color
-                color: '#FFF', // White icon color
-                cursor: 'pointer',
-                border: 'none',
-                padding: '10px 15px',
-                borderRadius: '0 5px 5px 0',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
+                backgroundColor: "#204063", // Custom background color
+                color: "#FFF", // White icon color
+                cursor: "pointer",
+                border: "none",
+                padding: "10px 15px",
+                borderRadius: "0 5px 5px 0",
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
               }}
             >
               <FontAwesomeIcon icon={faSearch} />
@@ -143,7 +143,7 @@ export default function Header() {
       <div
         className="signIn"
         onClick={handleSignInClick}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: "pointer" }}
       >
         <AccountCircleIcon fontSize="large" />
         <p>Sign In</p>
