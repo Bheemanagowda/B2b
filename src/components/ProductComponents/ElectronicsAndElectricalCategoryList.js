@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../styles/Product.css'
-import RightArrowIcon from '../../assets/images/vector.svg'; // Ensure this path is correct
-import ViewAll from '../ButtonComponents/ViewAll'; // Ensure this component is properly implemented
+import CategoryList from './CategoryList';
+import '../Button/styles/ViewAll.css'
+
+
 
 export default function ElectronicsAndElectricalCategoryList() {
   const electronicsCategories = [
@@ -11,23 +13,24 @@ export default function ElectronicsAndElectricalCategoryList() {
     { name: "Inverters", path: "/inverters" },
     { name: "Access Control Systems", path: "/access-control-systems" }
   ];
-
+  const buttonStyle = {
+    display: "flex",
+    padding: "14px 20px",
+    color: "#204063",
+    alignItems: "center",
+    border: "1px solid #204063",
+    borderRadius: "3px",
+    fontSize: "18px",
+    fontWeight: "600",
+  };
   return (
    
-        <div className="BgFurniture">
-      <h2 className="Title">Electronics and Electrical Products</h2>
-      <ul >
-        {electronicsCategories.map((category, index) => (
-          <li key={index} >
-            <img src={RightArrowIcon} className="RightArrow" alt="arrow icon" />
-            <a href={category.path} className="categoryLink">
-              {category.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ViewAll />
-    </div>
+    <CategoryList
+    title="Electronics and Electrical"
+    categories={ electronicsCategories}
+    buttonLabel="View All"
+    buttonStyle={buttonStyle}
+  />
 
   );
 }

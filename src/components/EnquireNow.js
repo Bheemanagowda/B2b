@@ -1,39 +1,42 @@
-import React, { useState } from "react";
-import "../styles/EnquiryNow.css"; // Import your external CSS if needed
-import "../styles/Responsive.css";
-import backgroundImage from "../assets/images/enquiry-now.jpg";
+import React, { useState } from 'react';
+import "../styles/EnquiryNow.css";  // Import your external CSS if needed
+import '../styles/Responsive.css';
+import backgroundImage from '../assets/images/enquiry-now.jpg';
+import Button from './Button/Button';
+import './Button/styles/ViewAll.css'
+
 
 export default function EnquireNow() {
-  const [product, setProduct] = useState("");
-  const [mobileNo, setMobileNo] = useState("");
+  const [product, setProduct] = useState('');
+  const [mobileNo, setMobileNo] = useState('');
 
   // Inline style for background image
   const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent page reload on form submission
+    e.preventDefault();  // Prevent page reload on form submission
 
-    if (product.trim() === "" || mobileNo.trim() === "") {
-      alert("Please fill out all fields.");
+    if (product.trim() === '' || mobileNo.trim() === '') {
+      alert('Please fill out all fields.');
       return;
     }
 
     // Mobile number validation (optional)
     const mobilePattern = /^[0-9]{10}$/;
     if (!mobilePattern.test(mobileNo)) {
-      alert("Please enter a valid 10-digit mobile number.");
+      alert('Please enter a valid 10-digit mobile number.');
       return;
     }
 
     alert(`Product: ${product}, Mobile No: ${mobileNo}`);
-
+    
     // Reset form fields
-    setProduct("");
-    setMobileNo("");
+    setProduct('');
+    setMobileNo('');
   };
 
   return (
@@ -60,9 +63,22 @@ export default function EnquireNow() {
             required
           />
         </div>
-        <button type="submit" className="submitButton">
-          Submit
-        </button>
+        <Button
+          label="Submit"
+          type="submit"  // Use type="submit" for button submission
+          style={{
+            display: "flex",
+            padding: "6px 34px",
+            backgroundColor: "#46a695",
+            color: "white",
+            width: "120px",
+            alignItems: "center",
+            border: "1px solid #46a695",
+            borderRadius: "2px",
+            fontSize: "16px",
+            fontWeight: "400"
+          }}
+        />
       </form>
     </div>
   );

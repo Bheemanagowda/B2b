@@ -1,28 +1,44 @@
 import React from 'react';
-import "../../styles/Responsive.css"
-import "../../styles/Product.css"
+import "../../styles/Responsive.css";
+import "../../styles/Product.css";
+import ProductList from './ProductList';
 // Import images
-import NutsImage from '../../assets/images/mechanical-products/1.png';
-import NailsImage from '../../assets/images/mechanical-products/2.png';
-import BallBearingImage from '../../assets/images/mechanical-products/3.png';
+import NutsImage from './images/mechanical-products/1.png';
+import NailsImage from './images/mechanical-products/2.png';
+import BallBearingImage from './images/mechanical-products/3.png';
 
 export default function MechanicalComponentsProducts() {
+
   const mechanicalComponents = [
-    { name: 'Nuts', image: NutsImage },
-    { name: 'Nails', image: NailsImage },
-    { name: 'Ball Bearing', image: BallBearingImage },
+    { 
+      id: 1, 
+      image: NutsImage, 
+      name: "Nuts", 
+     
+    },
+    { 
+      id: 2, 
+      image: NailsImage, 
+      name: "Nails", 
+    
+    },
+    { 
+      id: 3, 
+      image: BallBearingImage, 
+      name: "Ball Bearing", 
+     
+    },
   ];
 
   return (
     <div className="interiorAndFurnituresContainer">
-     
       <div className="row">
-        {mechanicalComponents.map((category, index) => (
-          <div key={index} className="col-md-4">
-            <div className="categoryItem">
-              <img src={category.image} alt={category.name} className="categoryIcon img-fluid" />
-              <h3 className="categoryName">{category.name}</h3>
-            </div>
+        {mechanicalComponents.map((component) => (
+          <div key={component.id} className='col-12 col-md-4'>
+            <ProductList
+              image={component.image} 
+              name={component.name}  
+            />
           </div>
         ))}
       </div>

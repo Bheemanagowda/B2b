@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import "../../styles/Footer.css"; // Create a CSS file if styling is needed
 
 export default function Email() {
   const emails = [
-    {  address: "sales@digitalb2btrade.com" },
-    { address: "info@digitalb2btrade.com" }
+    { address: "sales@digitalb2btrade.com" },
+    { address: "info@digitalb2btrade.com" },
   ];
 
   return (
@@ -13,7 +13,6 @@ export default function Email() {
       <ul className="email-list">
         {emails.map((email, index) => (
           <li key={index} className="email-item">
-          
             <a href={`mailto:${email.address}`} className="email-link">
               {email.address}
             </a>

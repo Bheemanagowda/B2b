@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+ // Import Link for navigation
 import "../../styles/Footer.css";
+import FooterLinks from "./FooterLinks"
 
 export default function QuickLinks() {
   const links = [
@@ -14,16 +15,11 @@ export default function QuickLinks() {
   ];
 
   return (
-    <div className="footer-links-container">
-      <h2 className="FooterTitle">Quick Links</h2>
-      <ul className="footer-links-list">
-        {links.map((link, index) => (
-          <li key={index}>
-            <i className="fas fa-angle-right"></i>
-            <Link to={link.path}>{link.label}</Link> {/* Using Link instead of anchor */}
-          </li>
-        ))}
-      </ul>
-    </div>
+    
+    <FooterLinks
+    title="Quick Links"
+    categories={links}
+
+    />
   );
 }

@@ -3,9 +3,10 @@ import logo from "../assets/images/logo.png";
 
 // Bootstrap and FontAwesome
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Form, Dropdown, InputGroup, Button } from "react-bootstrap";
+import { Form, Dropdown, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons";
+import Button from "./Button/Button";
 
 // Material UI
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -132,11 +133,22 @@ export default function Header() {
         </div>
 
         {/* Get Price Button */}
-        <div className="getPrice">
-          <Button variant="primary" className="getPrice">
-            Get Price
-          </Button>
-        </div>
+        <Button
+          label="Get Best Price"
+          type="submit" // Use type="submit" for button submission
+          style={{
+            display: "flex",
+            padding: "14px 20px",
+            backgroundColor: "#46A695",
+            color: "white",
+
+            alignItems: "center",
+            border: "1px solid #46A695",
+            borderRadius: "3px",
+            fontSize: "16px",
+            fontWeight: "400",
+          }}
+        />
       </div>
 
       {/* Sign-In Section */}

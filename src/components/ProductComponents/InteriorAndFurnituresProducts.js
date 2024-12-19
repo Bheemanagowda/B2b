@@ -1,30 +1,39 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is included
-import KitchenImage from '../../assets/images/ineterior-furnitures/kitchen.png';
-import WardrobeImage from '../../assets/images/ineterior-furnitures/wardrobe.jpg';
-import TvunitImage from '../../assets/images/ineterior-furnitures/tv-unit.png';
-import "../../styles/Product.css"
-import "../../styles/Responsive.css"
-
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is included
+import KitchenImage from "./images/ineterior-furnitures/kitchen.png";
+import WardrobeImage from "./images/ineterior-furnitures/wardrobe.jpg";
+import TvunitImage from "./images/ineterior-furnitures/tv-unit.png";
+import "../../styles/Product.css";
+import "../../styles/Responsive.css";
+import ProductList from "./ProductList";
 
 export default function InteriorAndFurnituresProducts() {
   // Categories
   const categories = [
-    { name: 'Kitchen', path: '/kitchen', image: KitchenImage },
-    { name: 'Wardrobe', path: '/wardrobe', image: WardrobeImage },
-    { name: 'TV Unit', path: '/tv-unit', image: TvunitImage },
+    {
+      id: 1,
+      image: KitchenImage,
+      name: "Kitchen",
+    },
+    {
+      id: 2,
+      image: WardrobeImage,
+      name: "Wardrobe",
+    },
+
+    {
+      id: 3,
+      image: TvunitImage,
+      name: "Tvunit",
+    },
   ];
 
   return (
     <div className="interiorAndFurnituresContainer">
-     
       <div className="row">
-        {categories.map((category, index) => (
-          <div key={index} className="col-md-4">
-            <div className="categoryItem">
-              <img src={category.image} alt={category.name} className="categoryIcon img-fluid" />
-              <h3 className="categoryName">{category.name}</h3>
-            </div>
+        {categories.map((category) => (
+          <div key={category.id} className="col-12 col-md-4">
+            <ProductList image={category.image} name={category.name} />
           </div>
         ))}
       </div>

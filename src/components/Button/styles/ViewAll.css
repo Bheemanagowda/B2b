@@ -32,3 +32,36 @@
     background-color: #003f7f; /* Even darker blue when clicked */
     transform: scale(0.98);     /* Slightly shrink the button */
   }
+
+
+ 
+  
+  .button-hover:hover {
+    background-color: #204063; /* Change background on hover */
+    color: white; /* Change text color on hover */
+  }
+  .view-all-button {
+    display: flex !important;
+    padding: 14px 20px;
+    color: #204063;
+    align-items: center;
+    border: 1px solid #204063;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent; /* Add this if you want a transparent background */
+    cursor: pointer;
+  }
+  
+  .view-all-button:hover {
+    background-color: #204063; /* Change to desired hover color */
+    color: #ffffff; /* Change to desired hover text color */
+    border-color: #204063; /* Optional, to keep the border consistent */
+  }
+  
+  button:hover{
+    background-color: #204063 !important;
+   border:1px solid #204063 !important;
+    color: #fff !important;
+
+  }

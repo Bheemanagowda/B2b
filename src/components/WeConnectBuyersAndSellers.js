@@ -28,7 +28,7 @@ export default function WeConnectBuyersAndSellers() {
 
       <div className="row">
         {weconnectIcons.map((icon, index) => (
-          <div className="col-md-4 " key={index}>
+          <div className="col-12 col-md-4 " key={index}>
             <div className="iconCard">
               <img src={icon.image} alt={icon.name} className="iconImage" />
               <h5 className="iconTitle">{icon.name}</h5>
