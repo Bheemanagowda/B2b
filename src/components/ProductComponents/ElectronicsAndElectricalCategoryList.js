@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../styles/Product.css'
+import './style/Product.css'
 import CategoryList from './CategoryList';
-import '../Button/styles/ViewAll.css'
+import "../Button/styles/ViewAll.css"
 
 
 

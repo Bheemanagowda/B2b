@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Footer.css";
+import "./Footer.css";
 import FooterLinks from "./FooterLinks";
 
 export default function PopularCategories() {

@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "../Button/Button";
 import "../Button/styles/ViewAll.css";
-import RightArrowIcon from "../../assets/images/vector.svg";
-import "../../styles/Product.css";
+import RightArrowIcon from "./images/vector.svg";
+import './style/Product.css'
 
 // Reusable Category List Component
 function CategoryList({ title, categories, buttonLabel, buttonStyle }) {

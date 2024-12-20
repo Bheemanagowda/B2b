@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import "../styles/EnquiryNow.css";  // Import your external CSS if needed
-import '../styles/Responsive.css';
-import backgroundImage from '../assets/images/enquiry-now.jpg';
-import Button from './Button/Button';
-import './Button/styles/ViewAll.css'
+import "./styles/EnquiryNow.css";  // Import your external CSS if needed
+import '../../styles/Responsive.css';
+import backgroundImage from './Images/enquiry-now.jpg';
+import Button from '../../components/Button/Button';
+import '../../components/Button/styles/ViewAll.css'
 
 
 export default function EnquireNow() {

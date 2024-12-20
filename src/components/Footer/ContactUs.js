@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Footer.css"; // Create a CSS file if styling is needed
+import "./Footer.css"; // Create a CSS file if styling is needed
 
 export default function ContactUs() {
   const address =

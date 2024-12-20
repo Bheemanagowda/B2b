@@ -1,7 +1,7 @@
 import React from "react";
-import GetDigitalB2bTradeApp from "../components/GetDigitalB2bTradeApp";
-import DownloadApp from "../components/DownloadApp";
-import "../styles/TradeApp.css";
+import GetDigitalB2bTradeApp from "./GetDigitalB2bTradeApp";
+import DownloadApp from "./DownloadApp";
+import "./styles/TradeApp.css";
 
 export default function TradeApp() {
   return (

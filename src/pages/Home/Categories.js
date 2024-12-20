@@ -1,18 +1,18 @@
 import React from "react";
-import "../styles/Categories.css";
-import "../styles/Customize.css";
-import "../styles/Responsive.css";
+import "./styles/Categories.css";
+import "../../styles/Customize.css";
+import "../../styles/Responsive.css";
 
-import InteriorFurnitureImage from "../assets/images/categories/interior-design.png";
-import FoodBeveragesiImage from "../assets/images/categories/fast-food.png";
-import ApparelGarmentsImage from "../assets/images/categories/male-cloths.png";
-import MedicalPharmaHealthcareImage from "../assets/images/categories/drug-store.png";
-import InformationTechnologyImage from "../assets/images/categories/consultant.png";
-import IndustrialPlantsMachineryImage from "../assets/images/categories/power-plant.png";
-import MechanicalComponentsImage from "../assets/images/categories/mechanical.png";
-import BuildingConstructionImage from "../assets/images/categories/building.png";
-import ChemicalsDyesImage from "../assets/images/categories/search.png";
-import MoreCategoriesImage from "../assets/images/categories/application.png";
+import InteriorFurnitureImage from "./Images/categories/interior-design.png";
+import FoodBeveragesiImage from "./Images/categories/fast-food.png";
+import ApparelGarmentsImage from "./Images/categories/male-cloths.png";
+import MedicalPharmaHealthcareImage from "./Images/categories/drug-store.png";
+import InformationTechnologyImage from "./Images/categories/consultant.png";
+import IndustrialPlantsMachineryImage from "./Images/categories/power-plant.png";
+import MechanicalComponentsImage from "./Images/categories/mechanical.png";
+import BuildingConstructionImage from "./Images/categories/building.png";
+import ChemicalsDyesImage from "./Images/categories/search.png";
+import MoreCategoriesImage from "./Images/categories/application.png";
 
 export default function Categories() {
   const Categories = [

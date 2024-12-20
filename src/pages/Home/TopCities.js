@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/TopCities.css";
-import "../styles/Responsive.css";
-import bengaluruImage from "../assets/images/topcities/bengaluru.jpg";
-import delhiImage from "../assets/images/topcities/delhi.jpg";
-import hyderabadImage from "../assets/images/topcities/hydrabad.jpg";
-import chennaiImage from "../assets/images/topcities/chennai.jpg";
-import mumbaiImage from "../assets/images/topcities/mumbai.jpg";
-import kolkattaImage from "../assets/images/topcities/kolkatta.jpg";
+import "./styles/TopCities.css";
+import "../../styles/Responsive.css";
+import bengaluruImage from "./Images/topcities/bengaluru.jpg";
+import delhiImage from "./Images/topcities/delhi.jpg";
+import hyderabadImage from "./Images/topcities/hydrabad.jpg";
+import chennaiImage from "./Images/topcities/chennai.jpg";
+import mumbaiImage from "./Images/topcities/mumbai.jpg";
+import kolkattaImage from "./Images/topcities/kolkatta.jpg";
 
 const TopCities = () => {
   // Array of cities with image paths

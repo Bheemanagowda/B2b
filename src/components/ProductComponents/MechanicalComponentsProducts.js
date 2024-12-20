@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../styles/Responsive.css";
-import "../../styles/Product.css";
+import './style/Product.css'
 import ProductList from './ProductList';
 // Import images
 import NutsImage from './images/mechanical-products/1.png';

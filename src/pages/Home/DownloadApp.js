@@ -1,9 +1,9 @@
 import React from "react";
 
-import "../styles/DownloadApp.css";
-import "../styles/Responsive.css";
-import downloadAppImage1 from "../assets/images/img-download-app/1.png";
-import downloadAppImage2 from "../assets/images/img-download-app/2.png";
+import "./styles/DownloadApp.css";
+import "../../styles/Responsive.css";
+import downloadAppImage1 from "./Images/img-download-app/1.png";
+import downloadAppImage2 from "./Images/img-download-app/2.png";
 
 export default function DownloadApp() {
   return (

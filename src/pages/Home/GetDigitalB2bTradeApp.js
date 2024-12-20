@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/GetDigitalB2bTradeApp.css";
-import "../styles/Responsive.css";
-import googleplayimage from "../assets/images/google-playstore/google-play.png";
+import "./styles/GetDigitalB2bTradeApp.css";
+import "../../styles/Responsive.css";
+import googleplayimage from "./Images/google-playstore/google-play.png";
 
 export default function GetDigitalB2bTradeApp() {
   return (

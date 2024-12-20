@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/SubscribeToTheNewsLetterApp.css"; // Create this file for styling
+import "./styles/SubscribeToTheNewsLetterApp.css"; // Create this file for styling
 
 export default function SubscribeToTheNewsLetterApp() {
   const [email, setEmail] = useState("");

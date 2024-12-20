@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is included
 import KitchenImage from "./images/ineterior-furnitures/kitchen.png";
 import WardrobeImage from "./images/ineterior-furnitures/wardrobe.jpg";
 import TvunitImage from "./images/ineterior-furnitures/tv-unit.png";
-import "../../styles/Product.css";
+import './style/Product.css'
 import "../../styles/Responsive.css";
 import ProductList from "./ProductList";
 

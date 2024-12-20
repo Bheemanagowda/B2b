@@ -1,6 +1,6 @@
 import React from 'react';
  // Import Link for navigation
-import "../../styles/Footer.css";
+import "./Footer.css";
 import FooterLinks from "./FooterLinks"
 
 export default function QuickLinks() {

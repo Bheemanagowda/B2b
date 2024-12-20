@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Footer.css"; // Create a CSS file if styling is needed
+import "./Footer.css"; // Create a CSS file if styling is needed
 
 export default function Telephone() {
   const phones = [{ number: "080 - 48525441" }, { number: "+91 9742477988" }];

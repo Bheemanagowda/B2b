@@ -1,7 +1,6 @@
 import React from "react";
-
-import "../../styles/Product.css";
-import "../Button/styles/ViewAll.css";
+import './style/Product.css'
+import "../Button/styles/ViewAll.css"
 import CategoryList from './CategoryList'
 
 export default function FoodAndBeverageCategoryList() {
